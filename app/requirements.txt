@@ -1,0 +1,5 @@
+Flask==0.12.2
+Flask-WTF==0.14.2
+gunicorn==19.7.1
+pygeoip==0.3.2
+requests==2.19.1

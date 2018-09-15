@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Your Country Information</title>
+       <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
+       <link rel="icon" href="http://vignette1.wikia.nocookie.net/survivor-org/images/5/52/M_title.png/revision/latest?cb=20130927203814">
+       <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+       <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+ 
+    </head>
+    <body>
+ 
+ 
+<div class="container">
+ 
+ 
+  <h2> Tried to Gather Some of your Countries Info </h2>
+  <h3> Country Flag: </h3>
+    <img src="{{country_info.flag}}" alt="Trulli" width="500" height="333">
+  <h3> Country Name: {{ country_info.name }} </h3>
+  <h3> Capital City: {{ country_info.capital }} </h3>
+  <h3> Region Name: {{ country_info.region }} </h3>
+  <h3> Subregion Name: {{ country_info.subregion }} </h3>
+  <h3> Area : {{ country_info.area }} </h3>
+  {% if country_info.borders %}
+  <h3> Borders Name: </h3>
+    <ul>
+        {% for border in country_info.borders %}
+         <li>{{ border }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+  <h3> Currencies: </h3>
+    <ul>
+        {% for currency in country_info.currencies %}
+         <li>Code: {{ currency.code }}</li>
+         <li>Name: {{ currency.name }}</li>
+         <li>Symbol: {{ currency.symbol }}</li>
+        {% endfor %}
+    </ul>
+  <h3> Languages: </h3>
+    <ul>
+        {% for language in country_info.languages %}
+         <li>Code: {{ language.name }}</li>
+        {% endfor %}
+    </ul>
+
+  <form  action="/" method="post">
+    <div class="form-group">
+
+      <label for="country">Country / Region:</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Country Name" value="">
+      <br>
+      <button type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+<br>            
+</div>
+</div>
+</body>
+</html>
