@@ -1,0 +1,13 @@
+2018-09-15 01:54:50,770 CRIT Supervisor running as root (no user in config file)
+2018-09-15 01:54:50,771 INFO supervisord started with pid 17705
+2018-09-15 01:54:51,773 INFO spawned: 'nginx' with pid 17708
+2018-09-15 01:54:51,775 INFO spawned: 'ui' with pid 17709
+2018-09-15 01:54:51,781 INFO exited: ui (exit status 127; not expected)
+2018-09-15 01:54:52,794 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-15 01:54:52,795 INFO spawned: 'ui' with pid 17711
+2018-09-15 01:54:52,798 INFO exited: ui (exit status 127; not expected)
+2018-09-15 01:54:54,802 INFO spawned: 'ui' with pid 17712
+2018-09-15 01:54:54,805 INFO exited: ui (exit status 127; not expected)
+2018-09-15 01:54:57,438 WARN received SIGINT indicating exit request
+2018-09-15 01:54:57,438 INFO waiting for nginx to die
+2018-09-15 01:54:58,442 INFO stopped: nginx (exit status 0)
